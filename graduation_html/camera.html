@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera View</title>
+    <!--<script async src="https://docs.opencv.org/4.x/opencv.js"></script>-->
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js/dist/face-api.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="camera-view">
+            <video id="video" width="413" height="531" autoplay playsinline muted></video>
+            <canvas id="overlay" width="413" height="531"></canvas>
+            <div id="timer" class="timer"></div>
+            <img id="face-guide" src="Frame17.png" class="face-guide"> 
+        </div> 
+        <div class="buttons">
+            <button id="refresh-button">처음으로 돌아가기</button>
+            <button id="download-button">사진 다운로드</button>
+        </div>
+        <div id="arrow" class="arrow"></div>
+        <div id="feedback" class="feedback"></div>
+        <div id="captured-image-container" style="display:none;">
+            <img id="captured-image" alt="Captured Image">
+            <button id="download-button">사진 다운로드</button>
+        </div>
+        </div>
+    </div>
+    <script src="camera.js"></script>
+</body>
+</html>

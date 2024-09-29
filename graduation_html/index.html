@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Detection</title>
+    <script async src="https://docs.opencv.org/4.x/opencv.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js/dist/face-api.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>인생샷 도우미</h1>
+        <h2>XAI 사진사와</h2>
+        <h3>함께하는 증명사진</h3>
+        <div class="instructions">
+            <p class="left-instruction">고개를 왼쪽으로 조금만 기울여 주세요!</p>
+        </div>
+        <div class="instructions2">
+            <p class="right-instruction">고개를 오른쪽으로 조금만 돌려주세요!</p>
+        </div>
+        <div class="main-image">
+            <img src="main.png" alt="메인 촬영 화면 이미지">
+        </div>
+        <button id="startButton">시작하기</button>
+    </div>
+    <script>
+        document.getElementById('startButton').addEventListener('click', () => {
+            window.location.href = 'camera.html';
+        });
+    </script>
+</body>
+</html>
